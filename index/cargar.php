@@ -6,6 +6,31 @@
     <title>Cargar adopcion</title>
 </head>
 <body>
-    
+     <form action="" method="post">
+        <input type="text" name="nombre" placeholder="Ingresa su nombre"><br><br>
+        <input type="text" name="apellido" placeholder="Ingresa su apellido"><br><br>
+        <input type="number" name="edad" placeholder="Ingresa su edad"><br><br>
+        <input type="text" name="direccion" placeholder="Ingresa tu dirección"><br><br>
+        <input type="text" name="telefono" placeholder="Ingresa tu teléfono"><br><br>
+        <input type="text" name="historia" placeholder="cuenta su historia "><br>
+        <input type="submit" value="Guardar datos">
+    </form>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $nombre 	= $_POST["nombre"];
+        $apellidos 	= $_POST["apellidos"];
+        $edad 		= $_POST["edad"];
+        $direccion 	= $_POST["direccion"];
+        $telefono 	= $_POST["telefono"];
+        $historia   = $_POST["historia"];
+
+        $fp = fopen("datos.txt", "a");
+        fwrite($fp, $nombre . "," . $apellidos . "," . $edad . "," . $direccion . "," . $telefono . "\n");
+        fclose($fp);
+
+        echo "Los datos se han guardado correctamente en el archivo datos.txt.";
+    }
+    ?>
 </body>
 </html>
