@@ -31,7 +31,7 @@
     }
     ?>
     <sql>
-        insert into usuarios (nombre, clave) values ();
+        insert into usuarios (nombre, apellido, edad, direcion, telefono) values ();
     </sql>
 </body>
 </html>
