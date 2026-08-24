@@ -5,11 +5,14 @@ SET time_zone = "+00:00";
 CREATE TABLE `gato` (
   `id_Gato` int(11) NOT NULL,
   `nombre` varchar(50) NOT NULL,
-  `edad` varchar(2) NOT NULL,
-  `género` varchar(10) NOT NULL, CHECK (género IN ('Macho', 'Hembra')) DEFAULT 'Hembra'
+  `edad` varchar(2)  NULL,
+  `genero` varchar(10) NOT NULL, CHECK (género IN ('Macho', 'Hembra')) 
   `foto` longblob NOT NULL,
-  `estado_Médico` varchar(70) NOT NULL,
-  `castración` varchar(3) NOT NULL CHECK (activo IN ('Sí', 'No')) DEFAULT 'Sí'
+  `estado_Medico` varchar(70) NOT NULL,
+  `telefono` varchar(10)  NULL,
+  `historia` varchar(70) NOT NULL,
+  `direccion` varchar(70) NOT NULL,
+  `castracion` varchar(3) NOT NULL CHECK (activo IN ('Sí', 'No')) 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `persona` (
