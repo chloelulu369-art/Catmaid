@@ -3,12 +3,13 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 CREATE TABLE `gato` (
-  `id` int(4) NOT NULL,
-  `apellido` varchar(50) NOT NULL,
+  `id_Gato` int(11) NOT NULL,
   `nombre` varchar(50) NOT NULL,
-  `fecha` date NOT NULL,
+  `edad` varchar(2) NOT NULL,
+  `género` varchar(10) NOT NULL, CHECK (género IN ('Macho', 'Hembra')) DEFAULT 'Hembra'
   `foto` longblob NOT NULL,
-  `clave` varchar(10) NOT NULL
+  `estado_Médico` varchar(70) NOT NULL,
+  `castración` varchar(3) NOT NULL CHECK (activo IN ('Sí', 'No')) DEFAULT 'Sí'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `persona` (
@@ -27,5 +28,5 @@ ALTER TABLE `persona`
   ADD UNIQUE KEY `usuario` (`usuario`);
 --- indice gato
 ALTER TABLE `gato`
-  ADD PRIMARY KEY (`id`),
+  ADD PRIMARY KEY (`id_Gato`),
   ADD UNIQUE KEY `clave` (`clave`);
