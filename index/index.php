@@ -13,6 +13,7 @@
         <a href="donar.php">donar</a>
         <a href="adopcion.php">adoptar</a>
         <a href="login.php">login</a>
+        <a href="cargar.php">Cargar nuevo gato</a>
         <!--imagen del usuario-->
     </header>
 </body>
