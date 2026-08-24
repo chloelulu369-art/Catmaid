@@ -8,15 +8,15 @@
 <!-- formulario "cargar gato" -->
 <body>
      <form action="" method="post">
-        <input type="text" name="nombre" placeholder="Ingresa su nombre"><br><br>
-        <input type="text" name="apellido" placeholder="Ingresa su apellido"><br><br>
-        <input type="number" name="edad" placeholder="Ingresa su edad"><br><br>
-        <input type=""  name="genero" placeholder=""><br><br>
-        <input type=""  name="foto" placeholder=""><br><br>
-        <input type=""  name="estado_Medico" placeholder=""><br><br>
+        <input type="text" name="nombre" placeholder="Ingresa nombre del gato"><br><br>
+        <input type="text" name="apellido" placeholder="Ingresa apellido del gato (opcional)"><br><br>
+        <input type="number" name="edad" placeholder="Ingresa edad del gato"><br><br>
+        <input type=""  name="genero" placeholder="ingrese genero del gato"><br><br>
+        <input type=""  name="foto" placeholder="cargue una foto del gato"><br><br>
+        <input type="text"  name="estado_Medico" placeholder="ingrese historial medico del gato, en caso de no tener, porfavor visite a un veterinarix"><br><br>
         <input type="text" name="direccion" placeholder="Ingresa tu dirección"><br><br>
         <input type="number" name="telefono" placeholder="Ingresa tu teléfono"><br><br>
-        <input type="text" name="historia" placeholder="cuenta su historia "><br>
+        <input type="text" name="historia" placeholder="cuenta la historia del gato"><br>
         <input type=""  name="castracion" placeholder=""><br><br>
         <input type="submit" value="Guardar datos">
     </form>
