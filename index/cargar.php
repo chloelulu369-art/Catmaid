@@ -26,13 +26,13 @@
         $nombre 	= $_POST["nombre"];
         $apellidos 	= $_POST["apellidos"];
         $edad 		= $_POST["edad"];
-        $genero;
-        $foto;
-        $estado_Medico;
+        $genero 	= $_POST["genero"];
+        $foto       = $_POST["foto"];
+        $estado_Medico = $_POST["estado_Medico"];
         $direccion 	= $_POST["direccion"];
         $telefono 	= $_POST["telefono"];
         $historia   = $_POST["historia"];
-        $castracion;
+        $castracion = $_POST["castracion"];
 
         $fp = fopen("datos.txt", "a");
         fwrite($fp, $nombre . "," . $apellidos . "," . $edad . "," . $direccion . "," . $telefono . "\n");
