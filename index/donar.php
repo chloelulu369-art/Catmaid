@@ -12,7 +12,7 @@
     <h1></h1>
     <h1></h1>
 </div>
-<!-- caja de donaciones-->
+<!-- caja de donaciones (todo esta incompleto; Completar)-->
 <div>
     <img><!-- imagen de gatitos-->
     <div>

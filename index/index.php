@@ -17,7 +17,7 @@
         <!--imagen del usuario-->
     </header>
 <!--pagina principal -->
-    <div src=""></div>
+    <div src=""></div><!-- imagen gato azul-->
     <h1>¡BIENVENIDOS A CATMAID!</h1>
     <div>
         <h2>
