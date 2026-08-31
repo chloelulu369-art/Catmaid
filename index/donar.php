@@ -6,6 +6,29 @@
     <title>Donar</title>
 </head>
 <body>
-    
+<!--header -->
+<!-- textos titulo-->
+<div>
+    <h1></h1>
+    <h1></h1>
+</div>
+<!-- caja de donaciones-->
+<div>
+    <img><!-- imagen de gatitos-->
+    <div>
+        <!-- donaciones mensuales-->
+        <div>
+            <h3>donaciones mensuales</h3>
+        </div>
+        <!-- imagen gato coquet-->
+        <div>
+        </div>
+        <!-- donaciones unicas-->
+        <div>
+            <h3>donaciones de unica vez</h3>
+        </div>
+    </div>
+</div>
+<h2>Tu donacion hace la diferencia</h2>
 </body>
 </html>
