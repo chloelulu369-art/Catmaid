@@ -1,37 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login - Catmaid</title>
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-     <form action="" method="post">
-        <input type="text" name="nombre" placeholder="Ingresa tu nombre"><br><br>
-        <input type="text" name="apellidos" placeholder="Ingresa tu apellido"><br><br>
-        <input type="number" name="edad" placeholder="Ingresa tu edad"><br><br>
-        <input type="text" name="direccion" placeholder="Ingresa tu dirección"><br><br>
-        <input type="text" name="telefono" placeholder="Ingresa tu teléfono"><br><br>
-        <input type="submit" value="Guardar datos">
-    </form>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="index.php">Catmaid</a>
+            <nav class="nav-links">
+                <a href="index.php">Inicio</a>
+                <a href="adopcion.php">Adoptar</a>
+                <a href="donar.php">Donar</a>
+                <a href="login.php">Login</a>
+                <a href="../from/lista.php">Administrar</a>
+            </nav>
+        </div>
+    </header>
 
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $nombre 	= $_POST["nombre"];
-        $apellidos 	= $_POST["apellidos"];
-        $edad 		= $_POST["edad"];
-        $direccion 	= $_POST["direccion"];
-        $telefono 	= $_POST["telefono"];
+    <main class="container section">
+        <section class="panel formulario-panel">
+            <p class="eyebrow">Acceso</p>
+            <h1>Iniciar sesión</h1>
+            <form class="formulario" method="post" data-validar="true">
+                <div class="campo-grid">
+                    <label class="campo-amplio">
+                        Usuario
+                        <input type="text" name="usuario" placeholder="admin@catmaid.org" required>
+                    </label>
 
-        $fp = fopen("datos.txt", "a");
-        fwrite($fp, $nombre . "," . $apellidos . "," . $edad . "," . $direccion . "," . $telefono . "\n");
-        fclose($fp);
+                    <label class="campo-amplio">
+                        Contraseña
+                        <input type="password" name="password" placeholder="••••••••" required>
+                    </label>
+                </div>
 
-        echo "Los datos se han guardado correctamente en el archivo datos.txt.";
-    }
-    ?>
-    <sql>
-        insert into usuarios (nombre, apellido, edad, direcion, telefono) values ();
-    </sql>
+                <div class="acciones-formulario">
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                    <a href="index.php" class="btn btn-secondary">Volver</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="../js/validaciones.js"></script>
 </body>
 </html>

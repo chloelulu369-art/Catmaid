@@ -40,6 +40,8 @@
 
         echo "Los datos se han guardado correctamente en el archivo datos.txt.";
     }
+    header('Location: ../from/froam-altas.php');
+    exit;
     ?>
 </body>
 </html>
