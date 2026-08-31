@@ -16,5 +16,17 @@
         <a href="cargar.php">Cargar nuevo gato</a>
         <!--imagen del usuario-->
     </header>
+<!--pagina principal -->
+    <div src=""></div>
+    <h1>¡BIENVENIDOS A CATMAID!</h1>
+    <div>
+        <h2>
+            Somos una ONG que conecta refugios de gatos con familias adoptantes,a traves de una base de datos que ayuda a conseguir fondos para su cuidado.Cada gato llega con lo suyo un color,una historia,una forma particular de mirarte.y es justo ahi en esas diferencias,donde nace la conexion.
+        </h2>
+    </div>
+    <!-- footer-->
+    <floor>
+
+    </floor>
 </body>
 </html>
