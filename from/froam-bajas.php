@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../modelo/gato.php';
+require_once __DIR__ . '/../gato.php';
 
 $modelo = new GatoModel();
 $id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 <form method="post" class="acciones-formulario">
                     <button class="btn btn-danger" type="submit">Sí, eliminar</button>
-                    <a class="btn btn-secondary" href="lista.php">Cancelar</a>
+                    <a class="btn btn-secondary" href="form/lista.php">Cancelar</a>
                 </form>
             </div>
         </section>

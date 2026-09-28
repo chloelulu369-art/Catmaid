@@ -11,7 +11,7 @@
         <div class="container nav">
             <a class="brand" href="index.php">Catmaid</a>
             <nav class="nav-links">
-                <a href="index.php">Inicio</a>
+                <a href="../index.php">Inicio</a>
                 <a href="adopcion.php">Adoptar</a>
                 <a href="donar.php">Donar</a>
                 <a href="login.php">Login</a>

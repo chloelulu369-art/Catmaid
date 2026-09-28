@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../modelo/gato.php';
+require_once __DIR__ . '/../gato.php';
 
 $mensaje = '';
 $error = '';
@@ -119,7 +119,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <label class="campo-amplio">
                         Dirección
-                        <input type="text" name="direccion" placeholder="Calle, colonia, ciudad" required>
+                        <input type="text" name="direccion" placeholder="Calle, Barrio, ciudad" required>
                     </label>
 
                     <label class="campo-amplio">
@@ -135,7 +135,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 <div class="acciones-formulario">
                     <button class="btn btn-primary" type="submit">Guardar gato</button>
-                    <a class="btn btn-secondary" href="lista.php">Volver al listado</a>
+                    <a class="btn btn-secondary" href="form/lista.php">Volver al listado</a>
                 </div>
             </form>
         </section>

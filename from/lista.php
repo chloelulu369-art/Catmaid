@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../modelo/gato.php';
+require_once __DIR__ . '/../gato.php';
 
 $modelo = new GatoModel();
 $gatos = $modelo->listar();
@@ -22,7 +22,7 @@ $gatos = $modelo->listar();
                     <p class="eyebrow">Administración</p>
                     <h1>Listado de gatos</h1>
                 </div>
-                <a class="btn btn-primary" href="froam-altas.php">Agregar gato</a>
+                <a class="btn btn-primary" href="form/froam-altas.php">Agregar gato</a>
             </div>
 
             <?php if (empty($gatos)): ?>
@@ -60,8 +60,8 @@ $gatos = $modelo->listar();
                                     <td><?= htmlspecialchars($gato['estado_medico']); ?></td>
                                     <td>
                                         <div class="grupo-acciones">
-                                            <a class="btn btn-secondary" href="froam-modificacion.php?id=<?= (int) $gato['id_gato']; ?>">Editar</a>
-                                            <a class="btn btn-danger" href="froam-bajas.php?id=<?= (int) $gato['id_gato']; ?>">Eliminar</a>
+                                            <a class="btn btn-secondary" href="form/froam-modificacion.php?id=<?= (int) $gato['id_gato']; ?>">Editar</a>
+                                            <a class="btn btn-danger" href="form/froam-bajas.php?id=<?= (int) $gato['id_gato']; ?>">Eliminar</a>
                                         </div>
                                     </td>
                                 </tr>

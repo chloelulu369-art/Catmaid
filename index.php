@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../modelo/gato.php';
+require_once __DIR__ . '/gato.php';
 
 $modelo = new GatoModel();
 $gatos = $modelo->listar();
@@ -10,7 +10,7 @@ $gatos = $modelo->listar();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catmaid</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header class="site-header">
@@ -18,10 +18,10 @@ $gatos = $modelo->listar();
             <a class="brand" href="index.php">Catmaid</a>
             <nav class="nav-links">
                 <a href="index.php">Inicio</a>
-                <a href="adopcion.php">Adoptar</a>
-                <a href="donar.php">Donar</a>
-                <a href="login.php">Login</a>
-                <a href="../from/lista.php">Administrar</a>
+                <a href="index/adopcion.php">Adoptar</a>
+                <a href="index/donar.php">Donar</a>
+                <a href="index/login.php">Login</a>
+                <a href="from/lista.php">Administrar</a>
             </nav>
         </div>
     </header>
@@ -37,13 +37,13 @@ $gatos = $modelo->listar();
                         ayuda a cubrir su cuidado y les da una segunda oportunidad para vivir en un hogar lleno de amor.
                     </p>
                     <div class="hero-actions">
-                        <a class="btn btn-primary" href="../from/lista.php">Ver gatos</a>
-                        <a class="btn btn-secondary" href="donar.php">Apoyar con donación</a>
+                        <a class="btn btn-primary" href="from/lista.php">Ver gatos</a>
+                        <a class="btn btn-secondary" href="index/donar.php">Apoyar con donación</a>
                     </div>
                 </div>
                 <div class="hero-visual">
                     <div class="card-hero">
-                        <img src="../imagenes/gatos/cat-hero.jpg" alt="Gato en adopción">
+                        <img src="imagenes/gato2.jpg" alt="Gato en adopción">
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@ $gatos = $modelo->listar();
                     <?php foreach ($gatos as $gato): ?>
                         <article class="card-gato">
                             <?php if (!empty($gato['foto'])): ?>
-                                <img src="../<?= htmlspecialchars($gato['foto']); ?>" alt="<?= htmlspecialchars($gato['nombre']); ?>">
+                                <img src="<?= htmlspecialchars($gato['foto']); ?>" alt="<?= htmlspecialchars($gato['nombre']); ?>">
                             <?php else: ?>
                                 <div class="placeholder-imagen">Sin foto</div>
                             <?php endif; ?>
@@ -78,7 +78,7 @@ $gatos = $modelo->listar();
                                 <p class="meta">Estado médico: <?= htmlspecialchars($gato['estado_medico']); ?></p>
                                 <p><?= htmlspecialchars($gato['historia']); ?></p>
                                 <div class="card-actions">
-                                    <a class="btn btn-primary" href="adopcion.php?id=<?= (int) $gato['id_gato']; ?>">Adóptame</a>
+                                    <a class="btn btn-primary" href="index/adopcion.php?id=<?= (int) $gato['id_gato']; ?>">Adóptame</a>
                                 </div>
                             </div>
                         </article>
@@ -92,6 +92,20 @@ $gatos = $modelo->listar();
         <div class="container footer-inner">
             <p>© 2026 Catmaid</p>
             <p>Adopta, cuida y comparte.</p>
+            <div class="nav"> <!-- O la clase que uses para tu contenedor de menú -->
+    <!-- Agrupamos el logo y el botón de inicio a la izquierda -->
+    <div style="display: flex; align-items: center; gap: 16px;">
+        <a href="index.php" class="brand">Catmaid</a>
+        <a href="index.php" class="btn btn-secondary" style="padding: 0.4rem 0.9rem; font-size: 0.85rem; min-height: unset;">🏠 Volver al inicio</a>
+    </div>
+
+    <!-- Tus enlaces de navegación actuales van a la derecha -->
+    <div class="nav-links">
+        <a href="index.php">Inicio</a>
+        <a href="from/lista.php">Lista</a>
+        <!-- Resto de tus enlaces... -->
+    </div>
+</div>
         </div>
     </footer>
 </body>

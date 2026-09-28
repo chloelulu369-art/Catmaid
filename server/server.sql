@@ -29,6 +29,6 @@ INSERT INTO persona (apellido, nombre, fecha_nacimiento, usuario, clave) VALUES
 ('Admin', 'Catmaid', '2020-01-01', 'admin@catmaid.org', '$2y$10$9jY33uD9a7.3vP086hVCWuy6F9L7fTsvzAxy1TQ6dYl6Y.S2w7lVu');
 
 INSERT INTO gato (nombre, edad, genero, foto, estado_medico, telefono, historia, direccion, castrado) VALUES
-('Luna', 2, 'Hembra', 'imagenes/gatos/luna.jpg', 'Vacunada y esterilizada', '5512345678', 'Llegó al refugio tras ser rescatada de la calle y ahora busca una familia cariñosa.', 'Colonia Centro, CDMX', 'Si'),
-('Tom', 1, 'Macho', 'imagenes/gatos/tom.jpg', 'En tratamiento de control', '5523456789', 'Es muy sociable y juguetón. Le encanta dormir junto a la gente.', 'San Miguel, CDMX', 'No'),
-('Milo', 4, 'Macho', 'imagenes/gatos/milo.jpg', 'Vacunado y saludable', '5534567890', 'Milo es calmado y muy noble con niños y adultos.', 'Coyoacán, CDMX', 'Si');
+('Luna', 2, 'Hembra', 'imagenes/gato86.jpg', 'Vacunada y esterilizada', '5512345678', 'Llegó al refugio tras ser rescatada de la calle y ahora busca una familia cariñosa.', 'Colonia Centro, CDMX', 'Si'),
+('Tom', 1, 'Macho', 'imagenes/gato47.jpg', 'En tratamiento de control', '5523456789', 'Es muy sociable y juguetón. Le encanta dormir junto a la gente.', 'San Miguel, CDMX', 'No'),
+('Milo', 4, 'Macho', 'imagenes/gato ruso.jpg', 'Vacunado y saludable', '5534567890', 'Milo es calmado y muy noble con niños y adultos.', 'Coyoacán, CDMX', 'Si');

@@ -1,6 +1,6 @@
 <?php
 $menuItems = [
-    ['Inicio', '../index/index.php'],
+    ['Inicio', '../index.php'],
     ['Lista', 'lista.php'],
     ['Alta', 'froam-altas.php'],
     ['Modificar', 'froam-modificacion.php'],

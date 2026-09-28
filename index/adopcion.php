@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../modelo/gato.php';
+require_once __DIR__ . '/../gato.php';
 
 $modelo = new GatoModel();
 $id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
@@ -17,9 +17,9 @@ $gatos = $modelo->listar();
 <body>
     <header class="site-header">
         <div class="container nav">
-            <a class="brand" href="index.php">Catmaid</a>
+            <a class="brand" href="../Catmaid/index.php">Catmaid</a>
             <nav class="nav-links">
-                <a href="index.php">Inicio</a>
+                <a href="../../Catmaid/index.php">Inicio</a>
                 <a href="adopcion.php">Adoptar</a>
                 <a href="donar.php">Donar</a>
                 <a href="login.php">Login</a>
