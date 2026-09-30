@@ -135,7 +135,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 <div class="acciones-formulario">
                     <button class="btn btn-primary" type="submit">Guardar gato</button>
-                    <a class="btn btn-secondary" href="form/lista.php">Volver al listado</a>
+                    <a class="btn btn-secondary" href="from/lista.php">Volver al listado</a>
                 </div>
             </form>
         </section>
